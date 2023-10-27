@@ -226,6 +226,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5778181071503185615, guid: 9fd70cc731adafa45b90b9f607af0cec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128462877012184318, guid: 9fd70cc731adafa45b90b9f607af0cec, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1bb45a25fd91ff4880a084c3e255363, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

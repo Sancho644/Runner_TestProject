@@ -974,9 +974,9 @@ MonoBehaviour:
   _colliderChecker: {fileID: 7195283326269860469}
   _characterAnimator: {fileID: 4540229000190281644}
   _torchController: {fileID: 2447630805317108616}
-  _moveForwardSpeed: 0
+  _moveForwardSpeed: 6
   _moveSideSpeed: 4
-  _jumpHeight: 152
+  _jumpHeight: 3
 --- !u!1 &1789272960074739661
 GameObject:
   m_ObjectHideFlags: 0
