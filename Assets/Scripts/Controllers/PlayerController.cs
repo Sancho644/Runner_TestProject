@@ -28,6 +28,7 @@ namespace Controllers
         private bool _isMoving;
         private bool _isFinish;
         private bool _isStop;
+        private bool _startRun;
         private Coroutine _coroutine;
 
         public Action OnEndGame;
@@ -45,6 +46,9 @@ namespace Controllers
 
         private void Update()
         {
+            if (!_startRun)
+                return;
+            
             if (_isFinish)
             {
                 CheckTorchLight();
@@ -98,6 +102,11 @@ namespace Controllers
             _torchController.SetTorchValues(torchBurningValue, torchLightValue);
 
             TorchGasController.ChangeTorchGas(torchBurningValue);
+        }
+
+        public void StartRun()
+        {
+            _startRun = true;
         }
 
         public void SetFinish()

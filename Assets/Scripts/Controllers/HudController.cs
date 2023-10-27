@@ -9,6 +9,7 @@ namespace Controllers
         [SerializeField] private TextMeshProUGUI _scoreValue;
         [SerializeField] private ScorePanelController _scorePanel;
         [SerializeField] private PlayerController _playerController;
+        [SerializeField] private MainMenuButtonController _mainMenuButtonController;
 
         private void Start()
         {
@@ -19,6 +20,12 @@ namespace Controllers
             _scoreValue.text = ScoreCounterController.CurrentScore.ToString();
 
             _playerController.OnEndGame += OnEndGame;
+            _mainMenuButtonController.OnStartGame += OnStartGame;
+        }
+
+        private void OnStartGame()
+        {
+            _playerController.StartRun();
         }
 
         private void OnEndGame()
