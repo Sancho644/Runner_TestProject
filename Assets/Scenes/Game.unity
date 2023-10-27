@@ -59999,6 +59999,10 @@ PrefabInstance:
       propertyPath: mainMenuButtonController
       value: 
       objectReference: {fileID: 1936841286}
+    - target: {fileID: 9164720053332847039, guid: b513e8e037ce52940a73b68338402a2e, type: 3}
+      propertyPath: _mainMenuButtonController
+      value: 
+      objectReference: {fileID: 1936841286}
     m_RemovedComponents:
     - {fileID: 4087187200913664588, guid: b513e8e037ce52940a73b68338402a2e, type: 3}
     m_RemovedGameObjects: []
